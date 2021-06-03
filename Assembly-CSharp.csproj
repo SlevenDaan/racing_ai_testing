@@ -61,6 +61,7 @@
      <Compile Include="Assets\Scripts\Car_PurePursuit.cs" />
      <Compile Include="Assets\Scripts\Car_PurePursuitPlus.cs" />
      <Compile Include="Assets\Scripts\Car_PurePursuitPlus_Old.cs" />
+     <Compile Include="Assets\Scripts\Car_Test.cs" />
      <Compile Include="Assets\Scripts\Car_WaypointFollow.cs" />
      <Compile Include="Assets\Scripts\Pathfinding.cs" />
      <Compile Include="Assets\Scripts\WaypointCar.cs" />

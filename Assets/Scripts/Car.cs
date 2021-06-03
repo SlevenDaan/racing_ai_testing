@@ -47,4 +47,19 @@ public class Car : MonoBehaviour
         speed = Mathf.Clamp(speed, 0, maxSpeed);
         transform.Translate(Vector3.forward * speed * Time.deltaTime);
     }
+
+    protected virtual void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Cars"))
+        {
+            speed *= 0.8f;
+        }
+    }
+    protected virtual void OnCollisionStay(Collision collision)
+    {
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Cars"))
+        {
+            speed *= (1f - Time.fixedDeltaTime);
+        }
+    }
 }
